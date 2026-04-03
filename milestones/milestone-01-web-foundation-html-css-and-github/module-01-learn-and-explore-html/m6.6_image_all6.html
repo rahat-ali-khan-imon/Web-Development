@@ -1,14 +1,74 @@
 image:
 
-<img src="image.jpg" height="300px" width="400px" alt="">
+<img src="image.jpg" height="300" width="400" alt="">
 <img src="https://images.unsplash.com/photo-1765750448230-11b703ba4a
-8e?q=80&w=811&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="300px" width="400px">
+8e?q=80&w=811&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="300" width="400">
 
 <h3>image</h3>
-<img src="Images/peter-steiner.jpg" height="300px" width="400px" alt="">
-<img src="Images/Natural/jony-unsplash.jpg" height="300px" width="400px" alt="">
-<img src="Images/Natural/kristaps-ungurs.jpg" height="300px" width="400px" alt="">
-<img src="Images/quan-jing.jpg" height="300px" width="400px" alt="">
-<img src="Images/Natural/Human/claudio-poggio-Z-XSDNJfNPA-unsplash.jpg" height="300px" width="400px" alt="">
-<img src="Images/Natural/Human/land-o-lakes-inc-p6wuN_3Wwqs-unsplash.jpg" height="300px" width="400px" alt="">
-<img src="Images/Natural/Human/vitaliy-shevchenko-ZOaUzMvOKj4-unsplash.jpg" height="300px" width="400px" alt="">
+<img src="Images/peter-steiner.jpg" height="300" width="400" alt="">
+<img src="Images/Natural/jony-unsplash.jpg" height="300" width="400" alt="">
+<img src="Images/Natural/kristaps-ungurs.jpg" height="300" width="400" alt="">
+<img src="Images/quan-jing.jpg" height="300" width="400" alt="">
+<img src="Images/Natural/Human/claudio-poggio-Z-XSDNJfNPA-unsplash.jpg" height="300" width="400" alt="">
+<img src="Images/Natural/Human/land-o-lakes-inc-p6wuN_3Wwqs-unsplash.jpg" height="300" width="400" alt="">
+<img src="Images/Natural/Human/vitaliy-shevchenko-ZOaUzMvOKj4-unsplash.jpg" height="300" width="400" alt="">
+
+
+<!--
+🎯 Short Answer
+👉 HTML attribute-এ px দেওয়া লাগে না
+
+✔️ correct:
+height="300"
+
+❌ unnecessary:
+height="300px"
+
+
+🧠 কেন px দেওয়া লাগে না?
+👉 HTML attribute (width/height) = already pixel ধরে নেয়
+<img height="300">
+
+👉 browser internally ধরে নেয়:
+300px
+
+
+📊 Difference বুঝো
+✅ HTML way
+<img src="image.jpg" width="400" height="300">
+
+✅ CSS way
+img {
+  width: 400px;
+  height: 300px;
+}
+
+👉 CSS-এ unit (px, %, rem) দিতে হয়
+👉 HTML attribute-এ default = px
+
+
+❗ কেন px avoid করা ভালো?
+cleaner code ✔️
+standard practice ✔️
+HTML spec অনুযায়ী ✔️
+
+
+🧠 Real Insight (important 🔥)
+👉 Professional developerরা usually এটা use করে:
+<img src="image.jpg" alt="">
+
+👉 তারপর size control করে CSS দিয়ে:
+img {
+  width: 300px;
+}
+
+
+🎯 Final বুঝো
+HTML → width="300" ✔️
+CSS → width: 300px; ✔️
+
+
+🎯 Final বুঝো
+HTML → width="300" ✔️
+CSS → width: 300px; ✔️
+-->
