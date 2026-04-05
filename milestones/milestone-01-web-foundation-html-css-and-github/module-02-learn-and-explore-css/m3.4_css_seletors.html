@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First CSS</title>
+    <style>
+        li {  
+            color: rgb(215, 7, 204);
+            background-color: aqua;
+            width: 50%;
+        }
+        #highlight {  /* ID selector → #highlight */
+            color: red;
+            font-size: xx-large;
+        }
+        .bodmas {                                           /* Class selector → .bodmas */
+            font-weight: bolder;
+            text-align: center;  /* Text center-align করে */
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS → শুধু এই h1 element apply হবে -->
+    <h1 style="background-color: blue; color: chartreuse;">My First CSS Website.</h1>
+    <!-- Inline CSS applied only to this p -->
+    <p style="color: rgb(239, 235, 8);">I learned a little bit about HTML.</p>
+    <p>I am learning CSS today. Basic only today.</P>
+     <!-- Class selector applied → font bold + center text -->
+    <p class="bodmas">I will learn JavaScript.</p>
+    <ul>
+        <li>HTML Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit, illum delectus earum cum recusandae quaerat magni nobis qui obcaecati, distinctio ea dolorem quo in blanditiis accusamus reiciendis tenetur itaque!</li>
+        <li id="highlight">CSS</li>  <!-- ID selector applied → red + xx-large -->
+        <li class="bodmas">JavaScript</li>
+    </ul>
+    <ol>
+        <li>Inline</li>
+        <li>Internal or Embedded</li>
+        <li>External</li>
+        <li>Inline</li>
+        <li class="bodmas">Internal or Embedded</li>
+        <li>External</li>
+        <li>Inline</li>
+        <li>Internal or Embedded</li>
+        <li class="bodmas">External</li>
+        <li>After class declaration</li>
+        <li class="bodmas">After class declaration</li>
+    </ol>
+</body>
+</html>
