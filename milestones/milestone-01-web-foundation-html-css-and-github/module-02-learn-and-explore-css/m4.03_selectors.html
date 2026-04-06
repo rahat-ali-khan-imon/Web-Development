@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green{
+            color: green; 
+        }
+        .bolder{
+            font-weight: 800;
+        }
+        span.highlight {
+            background-color: aqua;                                    /**/
+            border: 3px solid red;
+            padding: 5px;
+        }
+        .highlight, .attention{                              /* grouping selector */
+            background-color: yellow;
+            color: darkturquoise;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced Selectors</h1>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p class="green">This is a paragraph</p>  <!-- One element one class use -> green -->
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p class="green bolder">This is a paragraph</p>  <!-- One element two class use -> green and bolder -->
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p class="highlight">This is a paragraph</p> <!-- highlight -->
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p class="attention">This is a paragraph</p>
+    <p>This is a <span>paragraph</span></p>  <!-- span -->
+    <p>This is a <span class="highlight">paragraph</span></p>
+    <p class="highlight">This is a paragraph</p>
+    <ul class="highlight">  <!-- grouping using container -->
+        <li>Item 1</li>  
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <ol>
+        <li>Inline</li>
+        <li>Internal or Embedded</li>
+        <li>External</li>
+    </ol>
+    <!-- div is a container -->
+    <div class="highlight"> <!-- div, ul, ol etc container -->
+        <h2>My Blog</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quisquam necessitatibus distinctio autem vel tempora. Eos obcaecati suscipit voluptatibus consequatur quis, provident nihil, laboriosam quas sapiente deserunt, hic accusantium soluta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ex sint maiores expedita, natus officia animi at iste saepe beatae. Aspernatur quae ducimus animi voluptates explicabo cupiditate tenetur sapiente culpa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil corporis fuga temporibus ut molestiae necessitatibus. Accusantium, cum, sint, possimus perferendis debitis distinctio minima voluptate nam expedita repudiandae dicta soluta.</p>
+    </div>
+</body>
+</html>
