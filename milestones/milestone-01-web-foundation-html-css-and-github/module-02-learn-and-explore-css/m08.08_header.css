@@ -1,0 +1,16 @@
+.artical {
+    border: 10px solid rgb(115, 14, 210);
+    background-color: lightseagreen;
+    margin: 50px;
+    width: 400px;
+    box-shadow: 50px 25px 30px black;
+    border-radius: 20px;
+}
+
+.header {
+    height: 500px;
+    background-color: lightcoral;
+    background-image: url('./images/elsa.webp');
+    background-repeat: repeat-x;                                    /**/
+    /* background-repeat: repeat-y; */
+}
