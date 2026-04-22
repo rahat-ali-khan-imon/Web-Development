@@ -1,0 +1,18 @@
+.blog {
+    background-color: blueviolet;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#second-blog { 
+    background-color: aqua;
+}
+
+#minima {
+    color: yellow;
+    border: 5px solid lightgreen; 
+    width: 50px;                             /**/
+    height: 200px;
+}
