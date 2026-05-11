@@ -32,19 +32,19 @@ footer {
     display: grid;
     gap: 20px;
     grid-template-areas: 
-    "header header header header"
-    "navbar main main sidebar"
-    "navbar main main advertise"
-    "footer footer footer footer"; 
+        "header header header header"
+        "navbar main main sidebar"
+        "navbar main main advertise"
+        "footer footer footer footer"; 
 }
 
 @media screen and (max-width: 576px) {                     /* Small */
     .container {
         grid-template-areas:
-        "header"
-        "navbar"
-        "main"
-        "advertise"
-        "footer"; 
+            "header"
+            "navbar"
+            "main"
+            "advertise"
+            "footer"; 
     }
 }

@@ -41,20 +41,20 @@ footer {
 @media screen and (max-width: 576px) {
     .container {
         grid-template-areas:
-        "header"
-        "navbar"
-        "main"
-        "advertise"
-        "footer"; 
+            "header"
+            "navbar"
+            "main"
+            "advertise"
+            "footer"; 
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {            /* Medium */
     .container {
         grid-template-areas:
-        "header header header"
-        "navbar navbar navbar"
-        "sidebar main main"
-        "advertise footer footer"
+            "header header header"
+            "navbar navbar navbar"
+            "sidebar main main"
+            "advertise footer footer"
     }
 }
