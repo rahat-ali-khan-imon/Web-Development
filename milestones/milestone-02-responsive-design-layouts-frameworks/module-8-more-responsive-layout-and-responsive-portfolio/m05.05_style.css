@@ -1,0 +1,5 @@
+.container > * {
+  border: 3px solid gold;
+  background-color: blanchedalmond;
+  padding: 30px;
+}
