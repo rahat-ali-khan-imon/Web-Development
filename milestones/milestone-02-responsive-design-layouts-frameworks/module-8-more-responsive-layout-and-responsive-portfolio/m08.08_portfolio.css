@@ -297,11 +297,10 @@ footer .footer-container {
     }
 
     #about .about-container {
-        padding: 20px;
+        padding: 20px;                             /**/
     }
 
-    #skills .skills-container .skill-box,
-    #about .about-container .about-info {                             /**/
+    #skills .skills-container .skill-box {
         flex-direction: column;
     }
 

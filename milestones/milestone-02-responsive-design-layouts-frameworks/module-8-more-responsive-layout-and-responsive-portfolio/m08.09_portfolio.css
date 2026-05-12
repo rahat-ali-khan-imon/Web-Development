@@ -300,12 +300,8 @@ footer .footer-container {
         padding: 20px;
     }
 
-    #about .about-container .about-info {
-        gap: 30px;                                             /**/
-    }
-
     #skills .skills-container .skill-box,
-    #about .about-container .about-info {
+    #about .about-container .about-info {                             /**/
         flex-direction: column;
     }
 

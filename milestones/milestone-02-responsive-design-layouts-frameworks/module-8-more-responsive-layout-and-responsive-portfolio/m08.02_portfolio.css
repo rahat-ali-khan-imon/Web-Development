@@ -283,11 +283,7 @@ footer .footer-container {
     display: none !important;
 }
 
-@media screen and (max-width: 576px) {
-    .container {
-        width: 95%;                               /**/
-    }
-    
+@media screen and (max-width: 576px) {                  /**/
     #about, #skills, #resume {
         padding-top: 60px;
     }

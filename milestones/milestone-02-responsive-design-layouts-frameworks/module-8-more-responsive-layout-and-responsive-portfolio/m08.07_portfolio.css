@@ -296,15 +296,11 @@ footer .footer-container {
         padding-top: 60px;
     }
 
-    #about .about-container {
-        padding: 20px;                             /**/
-    }
-
     #skills .skills-container .skill-box {
         flex-direction: column;
     }
 
     .skill-box .skill-card {
-        max-width: 100%;
+        max-width: 100%;                             /**/
     }
 }

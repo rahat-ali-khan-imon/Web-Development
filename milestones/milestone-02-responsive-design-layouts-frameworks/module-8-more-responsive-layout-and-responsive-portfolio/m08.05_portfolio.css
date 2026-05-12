@@ -297,10 +297,6 @@ footer .footer-container {
     }
 
     #skills .skills-container .skill-box {
-        flex-direction: column;
-    }
-
-    .skill-box .skill-card {
-        max-width: 100%;                             /**/
+        flex-direction: column;                             /**/
     }
 }

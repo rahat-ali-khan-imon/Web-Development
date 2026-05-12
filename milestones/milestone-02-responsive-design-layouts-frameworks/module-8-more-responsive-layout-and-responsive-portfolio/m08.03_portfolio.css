@@ -285,13 +285,9 @@ footer .footer-container {
 
 @media screen and (max-width: 576px) {
     .container {
-        width: 95%;
+        width: 95%;                               /**/
     }
     
-    .section-heading h2 {
-        font-size: 30px;                              /**/
-    }
-
     #about, #skills, #resume {
         padding-top: 60px;
     }
