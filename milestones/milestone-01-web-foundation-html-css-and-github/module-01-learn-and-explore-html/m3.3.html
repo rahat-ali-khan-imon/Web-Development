@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negative Margin</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            margin-top: -100px;
+        }
+
+        p {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .overflow {
+            width: 200px;
+        }
+
+        .overflow2 {
+            width: 100%;
+            padding: 50px;
+        }
+
+        .inline {
+            width: 300px;
+            height: 200px;
+            background: tomato;
+        }
+
+        .inline-blocks {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+        }
+
+        .block {
+            display: block;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Negative Margin -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <!-- Overwrite -->
+    <p style="font-size: 30px;"> 
+        Overwrite
+    </p>
+    <!-- Overflow -->
+    <div class="overflow">
+        A veryyyyyyyyyyyyyyyyyyyyyyyyyOverflow long text
+    </div>
+    <div class="overflow2">
+        A veryyyyyyyyyyyyyyyyyyyyyyyyyOverflow long text
+    </div>
+    <!-- Inline -->
+    <a>Link</a>
+    <span>Hello</span>
+    <span class="inline">Hello</span>
+    <span class="inline-blocks">Hello</span>
+    <span class="block">Hello</span>
+    <!-- Block Element -->
+    <div>One</div>
+    <div>Two</div>
+</html>
