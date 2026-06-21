@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./m01.02_dom_intro.css">
+    <title>Tour of DOM</title>
+    <style>
+        h1 {
+            color: green;
+        }
+        #food-title {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is my header and no banner</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Welcome to My DOM</h1>
+            <ul>
+                <li>Shafayet</li>
+                <li class="foreign">Bonobash</li>
+                <li id="band">Jalali Set</li>
+                <li>DOM de re baba</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="food-title">Foods I Love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li>Lentils</li>
+                <li class="foreign">Burger</li>                         <!-- -->
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        // document.getElementsByName
+        const ilCollection = document.getElementsByTagName('li');
+        console.log(ilCollection);
+
+        // document.getElementById
+        const foodTitleH1 = document.getElementById('food-title');
+        console.log(foodTitleH1);
+        console.log(foodTitleH1.innerText);
+        foodTitleH1.innerText = 'Food I Loved to eat';
+
+        const bandElement = document.getElementById('band');
+        bandElement.innerText = 'Jalali Sleeping Band';
+    </script>
+</body>
+</html>
+
+
+<!-- Console 
+1. document.getElementsByClassName('foreign')
+
+-->
