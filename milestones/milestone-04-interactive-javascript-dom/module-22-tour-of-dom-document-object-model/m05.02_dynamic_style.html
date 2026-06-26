@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./m01.02_dom_intro.css">
+    <title>Tour of DOM</title>
+    <style>
+        h1 {
+            color: green;
+        }
+        #food-title {
+            color: blue;
+            background-color: lightgreen;                               /* */
+        }
+        .food .foreign {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is my header and no banner</h1>
+    </header>
+    <main>
+        <section id="old-dhaka" class="songs">
+            <h1>Welcome to My DOM</h1>
+            <p>
+                Lorem ipsum dolor <span>oli goli</span> sit amet consectetur adipisicing <span>Alias</span> elit. Non, vitae.
+            </p>
+            <h1>Programming <span>some text</span> fun!</h1>
+            <ul>
+                <li>Shafayet</li>
+                <li class="foreign">Bonobash</li>
+                <li id="band">Jalali Set</li>
+                <li>DOM de re baba</li>
+            </ul>
+        </section>
+        <section class="food">
+            <h1 id="food-title">Foods I Love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li>Lentils</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
+
+<!--
+1. const foodElement = document.getElementById('food-title')
+undefined
+
+2. foodElement.style.backgroundColor
+''
+
+3. foodElement.style.backgroundColor = 'gray'
+'gray'
+
+4. foodElement.style.borderRadius = '20px'
+'20px'
+
+5. foodElement.style.borderRadius = '0px'
+'0px'
+
+6. foodElement.style.padding = '5px'
+'5px'
+
+7. foodElement.style.padding = '50px'
+'50px'
+
+8. foodElement.style.padding = '0px'
+'0px'
+
+9. foodElement.style.marginLeft = '20px'
+'20px'
+
+10. foodElement.style.marginLeft = '100px'
+'100px'
+
+11. foodElement.style.textAlign = 'center'
+'center'
+-->

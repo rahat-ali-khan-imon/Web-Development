@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./m01.02_dom_intro.css">
+    <title>Tour of DOM</title>
+    <style>
+        h1 {
+            color: green;
+        }
+
+        #food-title {
+            color: blue;
+            /* background-color: lightgreen; */                      /* comment bg */
+        }
+
+        .bg-red {
+            background-color: red;                                  /* */
+        }
+
+        .bold {
+            font-weight: 100;                                           /* */
+        }
+
+        .big {
+            font-size: 3rem;                                         /* */
+        }
+
+        .food .foreign {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is my header and no banner</h1>
+    </header>
+    <main>
+        <section id="old-dhaka" class="songs">
+            <h1>Welcome to My DOM</h1>
+            <p>
+                Lorem ipsum dolor <span>oli goli</span> sit amet consectetur adipisicing <span>Alias</span> elit. Non, vitae.
+            </p>
+            <h1>Programming <span>some text</span> fun!</h1>
+            <ul>
+                <li>Shafayet</li>
+                <li class="foreign">Bonobash</li>
+                <li id="band" class="">Jalali Set</li>                          <!-- class -->
+                <li>DOM de re baba</li>
+            </ul>
+        </section>
+        <section class="food">
+            <h1 id="food-title">Foods I Love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li>Lentils</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
+
+<!--
+1. const foodElement = document.getElementById('food-title')
+undefined
+
+2. foodElement.classList
+DOMTokenList [value: '']
+
+3. foodElement.classList.add('bg-red')
+undefined
+
+4. foodElement.classList.remove('bg-red')
+undefined
+
+
+
+1. const foodElement = document.getElementById('food-title')
+undefined
+
+2. foodElement.classList.add('bold')
+undefined
+
+3. foodElement.classList.add('big')
+undefined
+
+4. foodElement.classList
+DOMTokenList(2) ['bold', 'big', value: 'bold big']
+
+
+
+1. foodElement.getAttribute('id')
+'food-title'
+
+2. foodElement.getAttribute('class')
+'bold big'
+
+3. foodElement.setAttribute('title', 'Title or tooltip by JS')
+undefined
+-->
