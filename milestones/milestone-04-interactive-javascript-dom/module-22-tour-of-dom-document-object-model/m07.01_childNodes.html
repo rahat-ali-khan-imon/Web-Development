@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./m06.12_dom_styling.css">
+    <title>Tour of DOM</title>
+    <style>
+        h1 {
+            color: green;
+        }
+
+        #food-title {
+            color: blue;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bold {
+            font-weight: 100;
+        }
+
+        .big {
+            font-size: 3rem;
+        }
+
+        .food .foreign {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is my header and no banner</h1>
+    </header>
+    <main>
+        <section id="old-dhaka" class="songs">
+            <h1>Welcome to My DOM</h1>
+            <p>
+                Lorem ipsum dolor <span>oli goli</span> sit amet consectetur adipisicing <span>Alias</span> elit. Non, vitae.
+            </p>
+            <h1>Programming <span>some text</span> fun!</h1>
+            <ul>
+                <li>Shafayet</li>
+                <li class="foreign">Bonobash</li>
+                <li id="band" class="">Jalali Set</li>
+                <li>DOM de re baba</li>
+            </ul>
+        </section>
+        <section class="food">
+            <h1 id="food-title">Foods I Love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li>Lentils</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul>
+                <li>Messi</li>
+                <li>Pele</li>
+                <li>Ronaldo</li>
+                <li>Embape</li>
+                <li>Chele</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
+<!--
+1. document.getElementById('players-container')
+<section id=​"players-container">​…​</section>​
+
+2. document.getElementById('players-container').childNodes 
+NodeList(5) [text, h1, text, ul, text]
+
+3. document.getElementById('players-container').childNodes[0]
+#text
+
+4. document.getElementById('players-container').childNodes[1]
+<h1>​Players​</h1>​
+
+4. document.getElementById('players-container').childNodes[2]
+#text
+
+5. document.getElementById('players-container').childNodes[3]
+<ul>​…​</ul>​
+
+6. document.getElementById('players-container').childNodes[3].childNodes
+NodeList(11) [text, li, text, li, text, li, text, li, text, li, text]
+
+7. document.getElementById('players-container').childNodes[3].childNodes[0]
+#text
+
+8. document.getElementById('players-container').childNodes[3].childNodes[1]
+<li>​…​</li>​
+
+9. document.getElementById('players-container').childNodes[3].childNodes[1].parentNode
+<ul>​…​</ul>​
+
+10. document.getElementById('players-container').childNodes[3].childNodes[1].parentNode.parentNode
+<section id=​"players-container">​…​</section>​
+
+11. document.getElementById('players-container').childNodes[3].childNodes[1].parentNode.parentNode.parentNode
+<main>​…​</main>​
+
+12. document.getElementById('players-container').childNodes[3].childNodes[1].parentNode.parentNode.parentNode.parentNode
+<body cz-shortcut-listen=​"true" data-new-gr-c-s-check-loaded=​"14.1305.0" data-gr-ext-installed>​…​</body>​
+
+13. document.getElementById('players-container').childNodes[3].childNodes[1].parentNode.parentNode.parentNode.parentNode.parentNode
+<html lang=​"en">​view-sourcescroll<head>​…​</head>​<body cz-shortcut-listen=​"true" data-new-gr-c-s-check-loaded=​"14.1305.0" data-gr-ext-installed>​…​</body>​<grammarly-desktop-integration data-grammarly-shadow-root=​"true" style=​"visibility:​ visible !important;​">​…​</grammarly-desktop-integration>​</html>​
+
+14. document.getElementById('players-container').childNodes[3].childNodes[1].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode
+#document (http://127.0.0.1:5500/milestones/milestone-04-interactive-javascript-dom/module-22-tour-of-dom-document-object-model/m07.01_childNodes.html)#top-layer
+
+15. document.getElementById('players-container').childNodes[3].childNodes[1].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode
+null
+-->
