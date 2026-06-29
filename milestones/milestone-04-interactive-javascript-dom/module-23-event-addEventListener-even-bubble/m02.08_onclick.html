@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <h1>DOM Doma Dom Events</h1>
+    <!-- Option 1 for click event handler -->
+    <button onclick="console.log(7);">Click Me</button>
+    <button onclick="console.log(63);">Another Button</button>
+    <button onclick="console.log('I am Clikded');">Third Button</button>
+    <br><br>
+
+    <!-- Option 2 for click event handler -->
+    <button onclick="makeYellow()">Make Yellow</button>
+    <button onclick="makeRed()">Make Red</button>
+    <button id="btn-make-blue">Make Blue</button>
+    <script>
+        const btnMakeBlue = document.getElementById('btn-make-blue');
+        function makeBlue() {
+            document.body.style.backgroundColor = 'gray';
+        }
+        btnMakeBlue.onclick = makeBlue;
+    </script>
+ 
+
+    <script src="./m02.04_onclick.js"></script>
+</body>
+</html>
+
+
+<!--
+এখানে () নেই।
+
+কেন?
+কারণ
+btnMakeBlue.onclick = makeBlue;
+
+মানে:
+"Click হলে makeBlue function-টা execute করো।"
+এখানে Function-এর reference দেওয়া হচ্ছে, Function call করা হচ্ছে না।
+
+
+পার্থক্য
+❌ Wrong
+btn.onclick = makeBlue();
+
+মানে:
+makeBlue();
+এখনই চালাও।
+
+
+✅ Correct
+btn.onclick = makeBlue;
+
+মানে:
+Button Click হলে
+↓
+makeBlue() চালাবে
+-->
