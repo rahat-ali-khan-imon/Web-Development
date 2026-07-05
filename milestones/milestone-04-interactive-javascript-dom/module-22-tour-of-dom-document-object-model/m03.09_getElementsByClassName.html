@@ -47,7 +47,7 @@
         console.log(foreignElements);
 
         for(const element of foreignElements) {
-            console.log(element.innerText);                         /* innerText */
+            console.log(element.innerText);                            /* innerText */
         }
     </script>
 </body>
@@ -55,7 +55,16 @@
 
 <!--
 
-1. document.getElementsByClassName('international')      ---------+> HTMLCollection [] , array
-2. document.getElementById('food-ti')             ------+> null
+1. document.getElementsByClassName('international')
+HTMLCollection []
+
+2. document.getElementsByClassName('foreign')
+HTMLCollection(4) [li.foreign, li.foreign, li.foreign, li.foreign]
+
+3. document.getElementById('food-ti')
+null
+
+4. document.getElementById('food-title')
+<h1 id=​"food-title">​Foods I Love​</h1>​
 
 -->
