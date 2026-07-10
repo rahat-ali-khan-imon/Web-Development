@@ -34,7 +34,7 @@ header {
 }
 
 nav {
-    width: 70%;                                          /* border remove */
+    width: 70%;                                        /* border remove */
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
