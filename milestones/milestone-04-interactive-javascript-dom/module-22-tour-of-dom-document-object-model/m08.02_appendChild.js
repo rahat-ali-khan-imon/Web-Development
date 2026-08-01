@@ -4,6 +4,7 @@ console.log(mainContainer);
 
 // Create Chile Node
 const placesSection = document.createElement('section');      // It's not in the DOM, so I'll create it.
+console.log(placesSection);
 
 
 
