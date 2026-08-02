@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <h1>DOM Doma Dom Events</h1>
+
+    <!-- Option 4: addEvenListener -->
+    <button id="btn-make-green">Make Green</button>
+
+    <script>
+        // document.getElementById().addEvenListener('evenType', handlerFunction)
+        document.getElementById('btn-make-green').addEventListener('click', function makeGreen() {
+            document.body.style.backgroundColor = 'green';                      /* */
+        });
+    </script>
+</body>
+</html>

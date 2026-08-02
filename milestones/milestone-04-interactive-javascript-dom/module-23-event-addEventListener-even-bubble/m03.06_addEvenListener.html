@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <h1>DOM Doma Dom Events</h1>
+
+    <!-- Option 4: addEvenListener -->
+    <button id="btn-make-green">Make Green</button>
+    <button id="btn-make-gold">Make Gold</button>
+
+    <script>
+        // document.getElementById().addEvenListener('evenType', handlerFunction)
+        document.getElementById('btn-make-green').addEventListener('click', function makeGreen() {
+            document.body.style.backgroundColor = 'green';
+        });
+
+        document.getElementById('btn-make-gold')                                    /* */
+            .addEventListener('click', function () {
+                document.body.style.backgroundColor = 'goldenrod';
+            }
+        );
+    </script>
+</body>
+</html>
