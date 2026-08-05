@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Handler</title>
+</head>
+<body>
+    <h1 id="page-title">Even Handler</h1>
+    <button id="btn-update-title">Update Title</button>
+
+    <script>
+        document.getElementById('btn-update-title')
+            .addEventListener('click', function () {
+                const pageTitleElement = document.getElementById('page-title');
+                console.log(pageTitleElement);
+                pageTitleElement.innerText = 'Updated page title text';                /* */
+            }
+        );
+    </script>
+    
+    <script src="./m04.01_even_handler.js"></script>
+</body>
+</html>
